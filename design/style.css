@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+:root{
+--Mobile: 375px;
+--Desktop: 1440px;
+/* Colors */
+/* ### Primary */
+
+--Light-red:hsl(356, 100%, 66%);
+--Very-light-red: hsl(355, 100%, 74%);
+--Very-dark-blue: hsl(208, 49%, 24%);
+
+/* ### Neutral */
+
+--White:hsl(0, 0%, 100%);
+--Grayish-blue: hsl(240, 2%, 79%);
+--Very-dark-grayish-blue:hsl(207, 13%, 34%);
+--Very-dark-black-blue: hsl(240, 10%, 16%);
+
+/* ## Typography */
+--Font-size: 16px;
+
+--Overpass: 'Overpass', sans-serif;
+--Ubuntu:'Ubuntu', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    scroll-behavior: smooth;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+}
+header{
+    background: radial-gradient(
+    var(--Light-red) 20%,
+    var(--Light-red) 40%
+    );
+    height: 85vh;
+    border-radius: 0 0 40px 40px;
+    padding: 5%;
+    
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;  
+}
+
+ul{
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+    position: relative;
+}
+ul li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0 25px;
+    text-align: center;
+    font-family: var(--Overpass);
+    
+}
+ul li ul.dropdown li{
+    display: block;
+}
+ul li ul.dropdown {
+    display: none;
+    width: fit-content;
+    position: absolute; 
+    z-index: 999;
+    background-color: white;
+}
+ul li ul.dropdown li a {
+    color: black;
+}
+ul li:hover ul.dropdown{
+    display: block;
+}
+
+.hero{
+    padding: 5%;
+    text-align: center;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hero h1{
+    color: white;
+    font-family: var(--Ubuntu);
+    font-weight: 600;
+    font-size: 50px;
+}
+.hero p{
+    color: white;
+    font-family: var(--Overpass);
+    font-size: 16px;
+}
+
+.btn{
+    background-color: var(--White);
+    color: var(--Light-red);
+    font-family: var(--Ubuntu);
+    font-weight: bold;
+    border-radius: 15px;
+    border-style: none;
+    width: 120px;
+    height: 36px;
+}
+
+
+.btn-outline{
+    width: 120px;
+    height: 36px;
+    border: 1px solid var(--White);
+    border-radius: 15px;
+    font-family: var(--Ubuntu);
+    font-weight: bold;
+    color: white;
+    background: transparent;
+
+}
+
+.login{
+    width: 120px;
+    height: 36px;
+    border: 0px solid var(--White);
+    border-radius: 15px;
+    font-family: var(--Ubuntu);
+    font-weight: bold;
+    color: white;
+    background: transparent;
+
+}
+
+main{
+    height: 100vh;
+    padding: 5% 10%;
+    background: url(/images/illustration-editor-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 650px 30px;
+}
+
+main h2{
+    text-align: center;
+    padding: 5% 5%;
+    font-family: var(--Overpass);
+    color: var(--Very-dark-blue);
+}
+
+main h3{
+    text-align: left;
+    padding: 2% 2%;
+    font-family: var(--Overpass);
+    color: var(--Very-dark-blue);
+}
+
+main p{
+    text-align: left;
+    padding: 2% 2%;
+    width: 50%;
+    font-family: var(--Overpass);
+    color: var(--Very-dark-blue);
+    font-size: 16px;
+}
+
+.infrastructure{
+    margin-top: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    height: 50vh;
+    padding: 5% 10%;
+    border-radius: 0 100px 0 100px;
+    background: linear-gradient(var(--Very-dark-grayish-blue),
+    hsl(237,23%,32%));
+  }
+
+  .infrastructure h2{
+    padding: 5%;
+    color: var(--White);
+    font-family: var(--Overpass);
+    font-size: 25px;
+  }
+
+  .infrastructure p{
+    padding: 5%;
+    color: var(--White);
+    font-family: var(--Overpass);
+    font-size: 16px;
+  }
+  .ad{
+   margin-top: 10%;
+   display: flex;
+   align-items: center;
+  }
+ .desc-img{
+    width: 50%;
+    position: relative;
+    right: 20%;
+    height: 30%;
+ }
+  .ad-desc{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35%;
+  text-align: center;
+    
+  }
+  .ad-desc h3{
+     text-align: left;
+    padding: 2% 2%;
+    font-family: var(--Overpass);
+    color: var(--Very-dark-blue);
+  }
+  .ad-desc p{
+    text-align: left;
+   padding: 0% 2%;
+   font-family: var(--Overpass);
+   color: var(--Very-dark-blue);
+ }
+
+ 
+
+
+
